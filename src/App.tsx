@@ -5,7 +5,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 function App(): JSX.Element {
     return (
         <div className="App">
-            <header className="App-header">
+            <header className="App-header" style={{ backgroundColor: "red" }}>
                 UD CISC275 with React Hooks and TypeScript - Jay Patel, Hello
                 World
             </header>
