@@ -1,4 +1,3 @@
-
 /**
  * Consume an array of numbers, and return a new array containing
  * JUST the first and last number. If there are no elements, return
@@ -155,10 +154,4 @@ export function injectPositive(values: number[]): number[] {
         a1.push(count);
     }
     return a1;
-}
-function value(value: string, index: number, array: string[]): unknown {
-    throw new Error("Function not implemented.");
-}
-function reduce(addends: number[]) {
-    throw new Error("Function not implemented.");
 }
