@@ -1,4 +1,3 @@
-import { count } from "console";
 
 /**
  * Consume an array of numbers, and return a new array containing
@@ -77,7 +76,7 @@ export const shoutIfExclaiming = (messages: string[]): string[] => {
  */
 export function countShortWords(words: string[]): number {
     let count = 0;
-    const allOfLess = words.map((value: string): void => {
+    words.map((value: string): void => {
         if (value.length < 4) {
             count += 1;
         }
