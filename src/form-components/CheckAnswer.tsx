@@ -15,14 +15,19 @@ export function CheckAnswer({
     return (
         <div>
             <h3>Check Answer</h3>
-            <Form.Group controlId="formAnswer">
-                <Form.Label>Enter Answer:</Form.Label>
-                <Form.Control
-                    value={answer}
-                    onChange={updateAnswer}
-                ></Form.Control>
-            </Form.Group>
-            <div>{answer === expectedAnswer ? "✔️" : "❌"}</div>
+            <div>
+                <Form.Group controlId="formAnswer">
+                    <Form.Label>Answer:</Form.Label>
+                    <Form.Control value={answer} onChange={updateAnswer} />
+                </Form.Group>
+                <div>
+                    {answer === expectedAnswer ? (
+                        <span>The answer is ✔️</span>
+                    ) : (
+                        <span>The answer is ❌</span>
+                    )}
+                </div>
+            </div>
         </div>
     );
 }
